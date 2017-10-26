@@ -1,0 +1,52 @@
+#piModal
+    {
+      position: absolute;
+    /*  top:0; */
+      bottom: 20;
+     right: 20;
+	/* left:0; */
+     margin: auto;
+        padding: 10px;
+        height: 450px;
+        width: 350px;
+        border: 5px solid yellow;
+           opacity:1;
+           filter:alpha(opacity=100); /* For IE8 and earlier */
+		   box-shadow: 5px 5px 5px #888888;
+		   	background-color: #FFFFFF;
+}
+#chatTitle{
+	color:blue;
+	background-color: #F0F2FA;
+	border: 5px solid #F0F2FA;
+}
+#chatContent{
+	width:340px;
+	height: 400px;
+	overflow-y:scroll;
+}
+.bot{
+float:left;
+margin-left:10px;
+background-color: #f2ffe6;
+border-radius: 10px;
+padding:5px;
+}
+
+.me{
+float:right;
+margin-right:10px;
+background-color: #e6f0ff;
+border-radius: 10px;
+padding:5px;
+}
+
+.chatInput{
+background-color: #e6f0ff;
+border: 1px solid #e6f0ff;
+}
+
+.que{
+visibility:hidden;
+position:absolute
+}

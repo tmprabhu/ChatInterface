@@ -1,0 +1,65 @@
+<html>
+<head>
+<link  rel="stylesheet" href="index.css" >
+<script type="text/javascript" src="index.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#piModal" ).draggable();
+  } );
+  </script>
+</head>
+<body onload="initChat()">
+<form id="chatForm">
+	<table id="FormTable" border="0" width="50%">
+		<tr class="ipText">
+			<td>Full Name</td><td class="que">Please enter your name</td>
+			<td><input type="text" name="fullname" /></td>
+		</tr>
+		<tr class="ipText">
+			<td>Date of Birth</td><td class="que">Date of Birth in dd/mm/yyyy format</td>
+			<td><input type="text" name="dob" /></td>
+		</tr>
+		<tr class="ipRadio">
+			<td>Gender</td><td class="que">Male (or) Female </td>
+			<td> <input type="radio" name="gender" value="male" checked> Male &nbsp;<input type="radio" name="gender" value="female"> Female<br></td>
+		</tr>
+		<tr class="ipCheck">
+			<td>Marital Status</td><td class="que">Are you married ? </td>
+			<td><input type="checkbox" name="maritalstatus" value="single"> Married </td>
+		</tr>
+		<tr class="ipList">
+			<td>Education</td>
+				<td class="que">Select education from the given list</td>
+			<td><select>
+					<option value="SSLC">SSLC</option>
+					<option value="HSC">HSC</option>
+					<option value="UG">UG</option>
+					<option value="PG">PG</option>
+				</select> </td>
+		</tr>
+		<tr>
+			<td><input type="submit" ></td>
+			<td></td>
+			<td><input type="button" value="clear"></td>
+		</tr>
+	</table>
+</form>
+<div id="piModal">
+	<div id="chatWindow">
+		<table>
+			<tr><td width="100%"><div id="chatTitle">Buddy...</div></td></tr>
+			<tr><td width="100%"><div id="chatContent">
+				<table width="100%" id="chatTable">
+				<!--
+					<tr><td width="100%"><div class="bot">hai</div></td></tr>
+					<tr><td width="100%"><div class="me"><input type="text" class="chatInput" /></div></td></tr>
+				-->
+				</table>
+			</div></td></tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
